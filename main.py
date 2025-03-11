@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def hello_world():
-    backend_data = "Toby"
+    backend_data = "Scissors, Paper, Rock!"
     return render_template("index.html",front_end_data = backend_data ), 200
 
 

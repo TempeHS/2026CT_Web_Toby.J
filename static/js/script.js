@@ -1,18 +1,13 @@
-player_name = prompt("Enter your name");
-
-alert("Hello " + player_name + "!");
 player_guess = prompt("Enter rock, paper or scissors");
 
-if (player_guess == "rock") {
-  player_guess = 1;
-}
+if (
+  player_guess == "Rock" ||
+  player_guess == "Scissors" ||
+  player_guess == "Paper"
+) {
+  document.getElementById("user_feedback").innerHTML = "Error, No capitals";
 
-if (player_guess == "paper") {
-  player_guess = 2;
-}
-
-if (player_guess == "scissors") {
-  player_guess = 3;
+  exit();
 }
 
 comp_guess = randomIntFromInterval(1, 3);
@@ -29,10 +24,11 @@ if (comp_guess == 3) {
   comp_guess = "scissors";
 }
 
-alert("Computer guessed " + comp_guess);
+alert("Computer chose " + comp_guess);
 
 if (player_guess == comp_guess) {
-  document.getElementById("user_feedback").innerHTML = "Tie! ";
+  document.getElementById("user_feedback").innerHTML =
+    "Tie!  You both chose " + player_guess;
 }
 
 if (player_guess == "rock" && comp_guess == "scissors") {
@@ -45,9 +41,24 @@ if (player_guess == "rock" && comp_guess == "paper") {
     "You lose! " + comp_guess + " beats " + player_guess;
 }
 
+if (player_guess == "scissors" && comp_guess == "paper") {
+  document.getElementById("user_feedback").innerHTML =
+    "You win! " + player_guess + " beats " + comp_guess;
+}
+
+if (player_guess == "scissors" && comp_guess == "rock") {
+  document.getElementById("user_feedback").innerHTML =
+    "You lose! " + comp_guess + " beats " + player_guess;
+}
+
 if (player_guess == "paper" && comp_guess == "scissors") {
   document.getElementById("user_feedback").innerHTML =
-    "Incorrect, You lose! " + comp_guess + " beats " + player_guess;
+    "You lose! " + comp_guess + " beats " + player_guess;
+}
+
+if (player_guess == "paper" && comp_guess == "rock") {
+  document.getElementById("user_feedback").innerHTML =
+    "You win! " + player_guess + " beats " + comp_guess;
 }
 
 function randomIntFromInterval(min, max) {
