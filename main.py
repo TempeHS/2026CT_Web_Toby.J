@@ -7,8 +7,13 @@ app = Flask(__name__)
 @app.route('/index.html')
 @app.route('/')
 def index():
-    return render_template("index.html"), 200
+    card_data = (
+        ("What skill level is this for?", "Learn Python website is for beginners to pros! There are lessons for all skill levels and experience", "Take the skill level quiz!", "static/images/card1use.svg"),
+        ("What is Python used for?", "Python can be used to build anything you can imagine, from games to lessons to websites!", "Learn what you can do with Python today", "static/images/card2what.svg"),
+        ("How can you learn?", "Random text", "Link", "static/images/card3how.svg"),
+    )
+    return render_template("index.html", cards=card_data), 200
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+   app.run(debug=True)
