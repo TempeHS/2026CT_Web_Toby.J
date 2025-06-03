@@ -26,6 +26,9 @@ def contact():
 def signup():
     return render_template("signup.html"), 200
 
+@app.route('/lessonshome.html')
+def lessonshome():
+    return render_template("lessonshome.html"), 200
 
 if __name__ == '__main__':
    app.run(debug=True)

@@ -7,12 +7,12 @@
 <div class="container">
   <div class="row">
     <div class="col-4">
-      <img src="" />
+      <img src="static/images/signup.png" class="img-fluid" />
     </div>
     <div class="col-8">
       <form class="needs-validation" novalidate>
         <div class="form-row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="validationCustom01">First name</label>
             <input
               type="text"
@@ -24,7 +24,7 @@
             />
             <div class="valid-feedback">Looks good!</div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="validationCustom02">Last name</label>
             <input
               type="text"
@@ -36,7 +36,7 @@
             />
             <div class="valid-feedback">Looks good!</div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="validationCustomUsername">Username</label>
             <div class="input-group">
               <div class="input-group-prepend">
@@ -66,7 +66,7 @@
             />
             <div class="invalid-feedback">Please provide a valid city.</div>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-6 mb-3">
             <label for="validationCustom04">State</label>
             <input
               type="text"
@@ -108,47 +108,15 @@
             </div>
           </div>
         </div>
-        <button
+        <a
           class="btn btn-primary"
-          href="index.html"
+          href="lessonshome.html"
           role="button"
           type="submit"
         >
           Submit
-        </button>
+        </a>
       </form>
-
-      <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-          "use strict";
-          window.addEventListener(
-            "load",
-            function () {
-              // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              var forms = document.getElementsByClassName("needs-validation");
-              // Loop over them and prevent submission
-              var validation = Array.prototype.filter.call(
-                forms,
-                function (form) {
-                  form.addEventListener(
-                    "submit",
-                    function (event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add("was-validated");
-                    },
-                    false
-                  );
-                }
-              );
-            },
-            false
-          );
-        })();
-      </script>
     </div>
   </div>
 </div>
