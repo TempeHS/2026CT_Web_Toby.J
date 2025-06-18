@@ -7,6 +7,19 @@
   transition: 0.5s;
 }
 
+.basic-4 {
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.5s;
+}
+
 .basic-3:hover {
-  --d: 100%;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.btn:hover,
+.basic-3-hover.btn:hover {
+  transform: scale(1.04);
+  transition: transform 0.2s;
 }

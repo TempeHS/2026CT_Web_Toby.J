@@ -4,16 +4,20 @@
   <div class="row">
     {% for card in cards %}
     <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
+      <div class="card basic-3-hover">
         <img src="{{ card [3] }}" class="card-img-top" alt="" />
         <div class="card-body">
           <h5 class="card-title">{{ card [0] }}</h5>
           <p class="card-text">{{ card [1] }}</p>
-          <a href="lessonshome.html" class="btn btn-primary">{{ card [2] }}</a>
+          <a
+            href="lessonshome.html"
+            class="btn btn:hover btn-primary basic-3-hover"
+            >{{ card [2] }}</a
+          >
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
 </div>
-test {% endblock %}
+{% endblock %}
