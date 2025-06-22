@@ -1,13 +1,29 @@
 {% extends 'layout.html' %} {% block content %}
+<style>
+  @media only screen and (max-width: 1000px) {
+    .signup-img {
+      display: none !important;
+    }
+    body {
+      background-image: url("/static/images/backgroundsignup.png");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+</style>
 <div class="container">
   <div class="row">
     <h1 style="text-align: center">Sign Up</h1>
+    <br />
   </div>
 </div>
 <div class="container">
   <div class="row">
     <div class="col-4">
-      <img src="static/images/signup.png" class="img-fluid" />
+      <img
+        src="/static/images/signup.png"
+        class="img-fluid img-thumbnail signup-img"
+      />
     </div>
     <div class="col-8">
       <form class="needs-validation" novalidate>
