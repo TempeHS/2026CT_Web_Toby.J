@@ -15,7 +15,7 @@
 <div class="container">
   <div class="row">
     {% for card in cards %}
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 p-2">
       <div class="card basic-3-hover">
         <img src="{{ card [3] }}" class="card-img-top" alt="" />
         <div class="card-body">
@@ -32,16 +32,22 @@
     {% endfor %}
   </div>
 </div>
+
 <div class="container">
-  <br />
-  <button type="button" class="signupbutton"><h1>Sign Up today!</h1></button>
-  <br /><br /><br />
+  <div class="row lg-6 mx-auto p-5">
+    <br />
+    <button type="btn-btn-success" class="btn btn-primary btn-lg btn-block">
+      Sign Up Today! (It's Free)
+    </button>
+    <br /><br /><br /><br /><br /><br />
+  </div>
 </div>
+
 <div class="container">
   <footer
     class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
   >
-    <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p>
+    <p class="col-md-4 mb-0 text-body-secondary">© Learn Python Website</p>
     <a
       href="/"
       class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -53,19 +59,22 @@
     </a>
     <ul class="nav col-md-4 justify-content-end">
       <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+        <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+        <a href="lessonshome.html" class="nav-link px-2 text-body-secondary"
+          >Lessons Hub</a
+        >
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+        <a href="signup.html" class="nav-link px-2 text-body-secondary"
+          >Sign Up</a
+        >
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+        <a href="contact.html" class="nav-link px-2 text-body-secondary"
+          >Contact</a
+        >
       </li>
     </ul>
   </footer>
