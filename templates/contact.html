@@ -1,24 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(
+          270deg,
+          rgb(57, 108, 175),
+          rgb(57, 101, 196),
+          rgb(90, 180, 196),
+          rgb(94, 121, 196),
+          rgb(71, 71, 121),
+          rgb(92, 100, 221),
+          rgb(163, 186, 228)
+        );
+        background-size: 1400% 1400%;
+        animation: rainbow 20s linear infinite;
+      }
+
+      @keyframes rainbow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
+
 {% extends 'layout.html' %} {% block content %}
-<h1>Contact Me</h1>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-md-4 col-sm-12">
-      <ol>
-        <li>Phone: 1234 5678</li>
-        <li>Email: toby@toby.com</li>
-        <li>Address: 1600 Pennsylvania Avenue</li>
-      </ol>
-    </div>
-    <div class="col-lg-6 col-md-8 col-sm-12">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7385.411987568306!2d-77.04134182475205!3d38.89692499035373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sThe%20White%20House!5e0!3m2!1sen!2sau!4v1748828537393!5m2!1sen!2sau"
-        width="900"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+
+<div class="contact_us_6">
+  <div class="responsive-container-block container">
+    <form class="form-box">
+      <div class="container-block form-wrapper">
+        <div class="mob-text">
+          <p class="text-blk contactus-head">Get in Touch</p>
+          <p class="text-blk contactus-subhead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam
+            lectus sapien.
+          </p>
+        </div>
+        <div class="responsive-container-block" id="i2cbk">
+          <div
+            class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+            id="i10mt-3"
+          >
+            <p class="text-blk input-title">Name</p>
+            <input
+              class="input"
+              id="ijowk-3"
+              name="FirstName"
+              placeholder="Please enter first name..."
+            />
+          </div>
+          <div
+            class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+            id="ip1yp"
+          >
+            <p class="text-blk input-title">Email</p>
+            <input
+              class="input"
+              id="ipmgh-3"
+              name="Email"
+              placeholder="Please enter email..."
+            />
+          </div>
+          <div
+            class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+            id="ih9wi"
+          >
+            <p class="text-blk input-title">Phone Number</p>
+            <input
+              class="input"
+              id="imgis-3"
+              name="PhoneNumber"
+              placeholder="Please enter phone number..."
+            />
+          </div>
+          <div
+            class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+            id="i634i-3"
+          >
+            <p class="text-blk input-title">Talk to us</p>
+            <textarea
+              class="textinput"
+              id="i5vyy-3"
+              placeholder="Please enter query..."
+            ></textarea>
+          </div>
+        </div>
+        <button class="submit-btn" id="w-c-s-bgc_p-1-dm-id-2">Submit</button>
+      </div>
+    </form>
+    <div
+      class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12"
+      id="i772w"
+    >
+      <div class="map-part">
+        <p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
+          Reach us on
+        </p>
+        <p class="text-blk map-contactus-subhead">
+          Phone: 0437 014 214
+          <br />
+          Email: toby@learnpython.com
+        </p>
+        <div class="social-media-links mob">
+          <a class="social-icon-link" href="#" id="ix94i-2-2">
+            <img
+              class="link-img image-block"
+              src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"
+            />
+          </a>
+          <a class="social-icon-link" href="#" id="itixd">
+            <img
+              class="link-img image-block"
+              src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png"
+            />
+          </a>
+          <a class="social-icon-link" href="#" id="izxvt">
+            <img
+              class="link-img image-block"
+              src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png"
+            />
+          </a>
+          <a class="social-icon-link" href="#" id="izldf-2-2">
+            <img
+              class="link-img image-block"
+              src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"
+            />
+          </a>
+        </div>
+        <div class="map-box container-block"></div>
+      </div>
     </div>
   </div>
 </div>

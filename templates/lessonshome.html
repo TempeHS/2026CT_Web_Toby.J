@@ -1,10 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(270deg, red, orange, yellow, green, rgb(81, 81, 201), rgb(141, 56, 201), violet);
+      background-size: 1400% 1400%;
+      animation: rainbow 20s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+</body>
+</html>
+
+
 {% extends 'layout.html' %} 
 {% block content %}
-<body style="background-color:rgb(131, 184, 202);">
+<body style="background: linear-gradient(to right, rgb(131, 184, 202),  rgb(24, 120, 151);">
   <div class="container">
     <div class="row">
       <br/>
-      <h1 style="text-align: center">Start your Python Journey Today!</h1>
+      <h1 style="text-align: center; padding: 30px;">Start your Python Journey Today!</h1>
       <br />
       <strong><h1  style="text-align: start">Beginner Lessons</strong></h1>
     </div>
@@ -41,14 +66,11 @@
       </div>
     </div>
     </div> 
-
-
     <div class="container">
     <div class="row">
       <br />
       <strong><h1  style="text-align: start">Intermediate Lessons</strong></h1>
     </div>
-
     <div class="row row-cols-1 row-cols-md-3 lg-4">
       <div class="col">
         <div class="card basic-3-hover">

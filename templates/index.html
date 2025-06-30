@@ -36,7 +36,11 @@
 <div class="container">
   <div class="row lg-6 mx-auto p-5">
     <br />
-    <button type="btn-btn-success" class="btn btn-primary btn-lg btn-block">
+    <button
+      onclick="signupfunction()"
+      type="btn-btn-success"
+      class="btn btn-primary btn-lg btn-block"
+    >
       Sign Up Today! (It's Free)
     </button>
     <br /><br /><br /><br /><br /><br />
@@ -79,4 +83,12 @@
     </ul>
   </footer>
 </div>
+
+<script>
+  function signupfunction() {
+    window.location.pathname = "/signup.html";
+  }
+</script>
 {% endblock %}
+
+</body>
