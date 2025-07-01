@@ -7,11 +7,76 @@
     border: 2px black;
     background-color: #04aa6d;
     padding: 20px 40px;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 30px;
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
 </style>
+
+<style>
+  .rainbowbutton {
+    margin: 0;
+    height: vh;
+    background: linear-gradient(
+      270deg,
+      rgb(175, 57, 57),
+      rgb(238, 255, 0),
+      rgb(0, 222, 252),
+      rgb(38, 0, 253),
+      rgb(98, 0, 255),
+      rgb(183, 0, 255),
+      rgb(247, 0, 255)
+    );
+    background-size: 1400% 1400%;
+    animation: rainbow 10s linear infinite;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
+
+
+<style>
+  .gradienttitlebuttons {
+    margin: 0;
+    height: 4vh;
+    background: linear-gradient(
+      270deg,
+      rgb(57, 108, 175),
+      rgb(57, 101, 196),
+      rgb(90, 180, 196),
+      rgb(94, 121, 196),
+      rgb(71, 71, 121),
+      rgb(92, 100, 221),
+      rgb(163, 186, 228)
+    );
+    background-size: 1400% 1400%;
+    animation: rainbow 10s linear infinite;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
+
+
 <div class="container">
   <div class="row">
     {% for card in cards %}
@@ -23,7 +88,7 @@
           <p class="card-text">{{ card [1] }}</p>
           <a
             href="lessonshome.html"
-            class="btn btn:hover btn-primary basic-3-hover"
+            class="btn btn:hover btn-primary basic-3-hover gradienttitlebuttons"
             >{{ card [2] }}</a
           >
         </div>
@@ -35,15 +100,17 @@
 
 <div class="container">
   <div class="row lg-6 mx-auto p-5">
-    <br />
-    <button
-      onclick="signupfunction()"
-      type="btn-btn-success"
-      class="btn btn-primary btn-lg btn-block"
-    >
-      Sign Up Today! (It's Free)
-    </button>
-    <br /><br /><br /><br /><br /><br />
+    <body>
+      <br />
+      <button
+        onclick="signupfunction()"
+        type="btn"
+        class="btn btn-primary btn-lg btn-block signupbutton rainbowbutton"
+      >
+        Sign Up Today! (It's Free)
+      </button>
+      <br /><br /><br /><br /><br /><br />
+    </body>
   </div>
 </div>
 
